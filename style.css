@@ -11,7 +11,7 @@
     --card: #FFFFFF;
     --border: #E5E7EB;
     --text: #1F2937;
-    --muted: #6B7280;
+    --muted: #4B5563;
     --danger: #991B1B;
     --danger-soft: #FEE2E2;
     --warning: #92400E;
@@ -151,16 +151,17 @@ img { max-width: 100%; display: block; }
 .inline-form { display: inline; margin: 0; }
 
 .link-button {
-    background: none;
-    border: none;
-    padding: 0;
+    background: var(--danger-soft);
+    border: 1px solid #F3B8B8;
+    padding: 0.35rem 0.7rem;
+    border-radius: 6px;
     color: var(--danger);
     font: inherit;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
 }
 
-.link-button:hover { text-decoration: underline; }
+.link-button:hover { background: var(--danger); border-color: var(--danger); color: #fff; text-decoration: none; }
 
 /* --------------------------------------------------------------------------
    Layout
@@ -223,8 +224,8 @@ img { max-width: 100%; display: block; }
 .btn-danger { background: var(--danger-soft); color: var(--danger); }
 .btn-danger:hover { background: var(--danger); color: #fff; }
 
-.btn-ghost { background: transparent; color: var(--muted); }
-.btn-ghost:hover { color: var(--forest); }
+.btn-ghost { background: transparent; color: var(--forest); border-color: var(--border); }
+.btn-ghost:hover { background: var(--bg); color: var(--forest); }
 
 .btn-sm { padding: 0.35rem 0.75rem; font-size: 0.8rem; }
 
@@ -287,20 +288,12 @@ img { max-width: 100%; display: block; }
 
 .search-box input {
     width: 100%;
-    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    padding: 0.75rem 1rem;
     border: none;
     border-radius: 10px;
     font-size: 0.95rem;
     background: #fff;
     color: var(--text);
-}
-
-.search-box span {
-    position: absolute;
-    left: 0.9rem;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.6;
 }
 
 .shop-grid {
@@ -668,15 +661,21 @@ input:focus, select:focus, textarea:focus {
 .staff-tabs { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
 
 .staff-tabs a {
-    color: var(--muted);
+    color: #374151;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.88rem;
-    padding-bottom: 2px;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
 }
 
 .staff-tabs a.active,
-.staff-tabs a:hover { color: var(--forest); border-bottom: 2px solid var(--forest); }
+.staff-tabs a:hover {
+    color: var(--forest);
+    background: var(--green-soft);
+    border-color: #B7E2C8;
+}
 
 .tab-badge {
     background: #EF4444;

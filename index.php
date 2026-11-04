@@ -72,7 +72,6 @@ $isStaffView = is_staff();
         <h1>Campus Canteen Shops</h1>
         <p>Browse menus from campus stalls and place pickup orders in seconds.</p>
         <div class="search-box">
-            <span>🔍</span>
             <input type="text" id="storeSearch" placeholder="Search a shop or food category…" autocomplete="off">
         </div>
     </section>
