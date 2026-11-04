@@ -1,0 +1,14 @@
+# Apache configuration for the project
+Options -Indexes
+
+# Never serve database dumps, logs or internal docs from the web root.
+<FilesMatch "\.(sql|ibd|frm|opt|log|md|ini)$">
+    Require all denied
+</FilesMatch>
+
+# Basic hardening headers (ignored by non-Apache servers).
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

@@ -1,0 +1,15 @@
+# Normalize line endings for source files, keep images binary.
+* text=auto
+
+*.php   text eol=lf
+*.css   text eol=lf
+*.sql   text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.gif   binary
+*.webp  binary
+*.ico   binary

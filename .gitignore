@@ -1,0 +1,24 @@
+# Local overrides (never commit real credentials)
+.env
+config.local.php
+
+# Runtime uploads are not part of the source tree
+/uploads/*
+!/uploads/.gitignore
+!/uploads/.htaccess
+!/uploads/.gitkeep
+
+# Logs and OS junk
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Composer (not used yet)
+/vendor/

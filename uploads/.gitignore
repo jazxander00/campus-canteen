@@ -1,0 +1,6 @@
+# Ignore everything in this folder…
+*
+# …except the folder placeholders and the Apache rules.
+!.gitignore
+!.gitkeep
+!.htaccess

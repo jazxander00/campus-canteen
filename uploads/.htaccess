@@ -1,0 +1,11 @@
+# User uploads: static images only.
+Options -Indexes
+
+<FilesMatch "\.(php|phtml|phar|php3|php4|php5|php7|php8|pl|py|cgi|sh)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent MIME sniffing from turning a text file into a script.
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>

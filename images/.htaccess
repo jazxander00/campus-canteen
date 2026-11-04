@@ -1,0 +1,6 @@
+# Uploaded and bundled images: never execute scripts from here.
+Options -Indexes
+
+<FilesMatch "\.(php|phtml|phar|php3|php4|php5|php7|php8|pl|py|cgi|sh)$">
+    Require all denied
+</FilesMatch>
