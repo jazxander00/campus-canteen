@@ -77,7 +77,7 @@ img { max-width: 100%; display: block; }
     flex-wrap: wrap;
 }
 
-.site-nav > a:not(.nav-cta),
+.site-nav > a,
 .nav-dropbtn {
     color: var(--text);
     text-decoration: none;
@@ -93,18 +93,8 @@ img { max-width: 100%; display: block; }
     gap: 4px;
 }
 
-.site-nav > a:not(.nav-cta):hover,
+.site-nav > a:hover,
 .nav-dropbtn:hover { color: var(--green); }
-
-.nav-cta {
-    background: var(--forest);
-    color: #fff !important;
-    padding: 0.45rem 0.9rem;
-    border-radius: 8px;
-    font-size: 0.85rem;
-}
-
-.nav-cta:hover { background: var(--green); color: #fff; }
 
 .nav-user { font-size: 0.85rem; color: var(--muted); }
 
