@@ -77,7 +77,7 @@ img { max-width: 100%; display: block; }
     flex-wrap: wrap;
 }
 
-.site-nav > a,
+.site-nav > a:not(.nav-cta),
 .nav-dropbtn {
     color: var(--text);
     text-decoration: none;
@@ -93,7 +93,7 @@ img { max-width: 100%; display: block; }
     gap: 4px;
 }
 
-.site-nav > a:hover,
+.site-nav > a:not(.nav-cta):hover,
 .nav-dropbtn:hover { color: var(--green); }
 
 .nav-cta {
